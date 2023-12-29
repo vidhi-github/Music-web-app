@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const Home = () => {
+const Music = () => {
   return (
     <div>
-      <Layout>home</Layout>
+      <Layout>Music</Layout>
     </div>
   );
 };
 
-export default Home;
+export default Music;

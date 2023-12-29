@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const Home = () => {
+const Search = () => {
   return (
     <div>
-      <Layout>home</Layout>
+      <Layout>Search</Layout>
     </div>
   );
 };
 
-export default Home;
+export default Search;

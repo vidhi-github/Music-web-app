@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const Home = () => {
+const Messages = () => {
   return (
     <div>
-      <Layout>home</Layout>
+      <Layout>Messages</Layout>
     </div>
   );
 };
 
-export default Home;
+export default Messages;

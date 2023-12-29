@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,600;1,300;1,400&display=swap');
+.sidebar-container{
+    height: 100%;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15%;
+    border-right:2px solid #b3b3b3;
+    position: absolute;
+    top: 0;
+}
+.logo-heading{
+    font-family: 'Monoton', sans-serif;
+    font-size: 1.5rem;
+}
+.side-list-icon-container{
+    margin: 1rem 0;
+}
+.list-container{
+    list-style: none;
+    padding: 0;
+}
+.side-nav-link{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+    color: #000000;
+    padding-left: 8px;
+    margin: 4px;
+}
+.list-text{
+    margin-left: 1.5rem;
+    font-size: 18px;
+}
+.side-nav-link:hover{
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+}
+

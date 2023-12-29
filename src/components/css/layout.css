@@ -1,0 +1,10 @@
+.layout-container{
+    display: flex;
+}
+.layout-sidebar{
+    width: 20%;
+}
+.layout-content{
+    width: 80%;
+    align-items: center;
+}
