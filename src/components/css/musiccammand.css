@@ -1,0 +1,14 @@
+.cammand-play-pause-button{
+    border: none;
+    background: none;
+    border: 1px solid red;
+    background: red;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 30px;
+
+    top: 30%;
+    left: 40%;
+}

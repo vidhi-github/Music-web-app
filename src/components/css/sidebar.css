@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,600;1,300;1,400&display=swap');
 .sidebar-container{
-    height: 100%;
-    padding-left: 1%;
+    padding-left: 5%;
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     justify-content: space-between;
-    width: 15%;
-    border-right:2px solid #b3b3b3;
-    position: absolute;
-    top: 0;
+    height: 100vh;
 }
 .logo-heading{
     font-family: 'Monoton', sans-serif;
@@ -19,7 +16,7 @@
 }
 .list-container{
     list-style: none;
-    padding: 0;
+    padding: 0px;
 }
 .side-nav-link{
     text-decoration: none;
@@ -29,7 +26,10 @@
     font-size: 25px;
     color: #000000;
     padding-left: 8px;
-    margin: 4px;
+    margin:0 4px;
+}
+.side-nav-link:active{
+    color: red;
 }
 .list-text{
     margin-left: 1.5rem;

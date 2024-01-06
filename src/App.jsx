@@ -9,6 +9,7 @@ import Music from "./pages/Music";
 import Notification from "./pages/Notification";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
+import Loging from "./authContext/Loging";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +25,8 @@ function App() {
           <Route path="/notifications" element={<Notification />} />
           <Route path="/search" element={<Search />} />
           <Route path="/profile" element={<Profile />} />
+          //user data
+          <Route path="/authentication/user" element={<Loging />} />
         </Routes>
       </div>
     </>

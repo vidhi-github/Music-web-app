@@ -1,10 +1,31 @@
 .layout-container{
     display: flex;
+    height: 100vh;
+    overflow-y: hidden;
 }
 .layout-sidebar{
     width: 20%;
+    position: sticky;
+    /* height: vh; */
 }
 .layout-content{
     width: 80%;
+    
     align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.up-layout-content{
+    overflow-y: scroll;
+    height: 85vh;
+    padding-left: 10%;
+}
+.up-layout-content::-webkit-scrollbar{
+    display: none;
+}
+.down-layout-content{
+    height: 15vh;
+    /* background-color: black; */
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }

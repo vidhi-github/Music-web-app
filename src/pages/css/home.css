@@ -1,0 +1,30 @@
+.home-container{
+    
+}
+.home-music-card{
+    border: 1px solid #000000;
+    width: 35%;
+    margin: 30px;
+    /* padding:0 px; */
+    border-radius: 5px;
+    position: relative;
+}
+.home-music-card>img{
+    width: 100%;
+    display: inline;
+}
+.home-social-figure-lisr-container{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    margin: 0;
+}
+.home-social-figure-lisr{
+    font-size: 25px;
+    cursor: pointer;
+}
+.home-music-card-text{
+    font-size: 18px;
+    margin-left: 10px;
+}
