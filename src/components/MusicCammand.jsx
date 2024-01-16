@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { FaPause } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 import "./css/musiccammand.css";
-const MusicCammand = ({ audio }) => {
+const MusicCammand = ({ audio, nextMuc, prevMuc }) => {
   const audioPlayer = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);

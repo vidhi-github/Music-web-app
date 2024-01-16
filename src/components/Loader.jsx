@@ -1,5 +1,5 @@
 import React from "react";
-import { Audio } from "react-loader-spinner";
+import { Audio, CirclesWithBar } from "react-loader-spinner";
 export const Loader = () => {
   return (
     <div>
@@ -13,5 +13,21 @@ export const Loader = () => {
         wrapperClass
       />
     </div>
+  );
+};
+export const CircleLoader = () => {
+  return (
+    <CirclesWithBar
+      height="40"
+      width="40"
+      color="#000000"
+      outerCircleColor="#000000"
+      innerCircleColor="#000000"
+      barColor="#000000"
+      ariaLabel="circles-with-bar-loading"
+      wrapperStyle={{}}
+      wrapperClass=""
+      visible={true}
+    />
   );
 };

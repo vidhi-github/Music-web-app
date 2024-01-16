@@ -33,9 +33,22 @@
     font-size: 18px;
     font-weight: bold;
 }
-.auth-input[type='submit']{
+/* .auth-input[type='submit']{
     height: 50px;
     width: 83%;
     background: #b5f7f7;
+    cursor: pointer;
+} */
+.auth-btn{
+    border: none;
+    background: none;
+    padding:10px 20px;
+    background-color: #b5f7f7;
+    font-size: 18px;
+    font-weight: bold;
+    width: 83%;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
     cursor: pointer;
 }
