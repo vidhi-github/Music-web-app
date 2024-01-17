@@ -23,6 +23,9 @@
 .up-layout-content::-webkit-scrollbar{
     display: none;
 }
+.layout-content-part-2{
+    display: flex;
+}
 .down-layout-content{
     height: 15vh;
     /* background-color: black; */

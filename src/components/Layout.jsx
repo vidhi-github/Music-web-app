@@ -41,7 +41,12 @@ const Layout = ({ children }) => {
         <Sidebar />
       </div>
       <div className="layout-content">
-        <div className="up-layout-content">{children}</div>
+        <div className="layout-content-part-2">
+          <div className="up-layout-content">{children}</div>
+          <div className="right-layout-content">
+            <h2>Seggested for you</h2>
+          </div>
+        </div>
         <div className="down-layout-content"></div>
       </div>
     </div>

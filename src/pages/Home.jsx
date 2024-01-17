@@ -30,7 +30,7 @@ const Home = () => {
   const handleLikeMusic = async (mid) => {
     try {
       console.log("like music");
-      if (auth?.user?.likesmusic.find((e) => e === mid)) {
+      if (auth && auth?.user?.likesmusic.find((e) => e === mid)) {
         const unlike = await axios.put(
           `https://music-api-2rhl.onrender.com/api/v1/product/music-unlike/${auth.user._id}/${mid}`
         );
@@ -81,7 +81,7 @@ const Home = () => {
                     <li
                       className="home-social-figure-lisr"
                       onClick={() =>
-                        auth
+                        auth && auth.length > 0
                           ? handleLikeMusic(item._id)
                           : navigate("/authentication/user")
                       }
@@ -89,7 +89,7 @@ const Home = () => {
                       <FaHeart
                         style={{
                           color: `${
-                            auth
+                            auth && auth.length > 0
                               ? `${
                                   auth.user.likes.find((l) => l === item._id)
                                     ? "red"

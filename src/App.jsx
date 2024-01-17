@@ -10,6 +10,7 @@ import Notification from "./pages/Notification";
 import Search from "./pages/Search";
 import Profile from "./pages/Profile";
 import Loging from "./authContext/Loging";
+import More from "./pages/More";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/notifications" element={<Notification />} />
           <Route path="/search" element={<Search />} />
           <Route path="/:pr" element={<Profile />} />
+          <Route path="/more" element={<More />} />
           //user data
           <Route path="/authentication/user" element={<Loging />} />
         </Routes>

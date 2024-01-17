@@ -55,7 +55,7 @@ const Sidebar = () => {
             </li>
             <li className="list-icon">
               <a href={`${auth?.user?.userId}`} className="side-nav-link">
-                {auth?.user?.profile?.data ? (
+                {auth && auth?.user?.profile?.data ? (
                   <img
                     className="sidebar-dp"
                     src={`https://music-api-2rhl.onrender.com/api/v1/auth/user-logo/${auth?.user?._id}`}
