@@ -1,0 +1,21 @@
+.profile-all-data-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-dp{
+    width: 15%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.profile-uper-data-container-lower{
+    display: flex;
+}
+.p-playlist-data{
+    display: flex;
+    text-align: center;
+    margin: 10px;
+}
+.p-playlist-data>p{
+    margin-right: 20px;
+}

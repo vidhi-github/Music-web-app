@@ -41,3 +41,8 @@
     background-color: #d3d3d3;
 }
 
+.sidebar-dp{
+    height: 23px;
+    border-radius: 50%;
+    border: 1px solid black;
+}

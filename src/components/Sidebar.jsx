@@ -8,7 +8,9 @@ import { BsChatHeartFill } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 import { IoReorderThree } from "react-icons/io5";
 import "./css/sidebar.css";
+import { useAuth } from "../context/auth";
 const Sidebar = () => {
+  const [auth, setAuth] = useAuth();
   return (
     <>
       <div className="sidebar-container">
@@ -52,8 +54,18 @@ const Sidebar = () => {
               </a>
             </li>
             <li className="list-icon">
-              <a href="/profile" className="side-nav-link">
-                <CgProfile />
+              <a href={`${auth?.user?.userId}`} className="side-nav-link">
+                {auth?.user?.profile?.data ? (
+                  <img
+                    className="sidebar-dp"
+                    src={`https://music-api-2rhl.onrender.com/api/v1/auth/user-logo/${auth?.user?._id}`}
+                    alt=""
+                    srcset=""
+                  />
+                ) : (
+                  <CgProfile />
+                )}
+
                 <p className="list-text">Profile</p>
               </a>
             </li>

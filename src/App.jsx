@@ -24,7 +24,7 @@ function App() {
           <Route path="/music" element={<Music />} />
           <Route path="/notifications" element={<Notification />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/:pr" element={<Profile />} />
           //user data
           <Route path="/authentication/user" element={<Loging />} />
         </Routes>

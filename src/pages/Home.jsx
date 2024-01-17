@@ -11,8 +11,8 @@ import { FaShareSquare } from "react-icons/fa";
 import { GiMusicSpell } from "react-icons/gi";
 import { useAuth } from "../context/auth";
 import { useNavigate } from "react-router-dom";
+import GetUserData from "../hooks/GetUserData";
 const Home = () => {
-  const [user, setUser] = useState();
   const [data, setData] = useState();
   const [auth, setAuth] = useAuth();
   const navigate = useNavigate();
@@ -26,28 +26,15 @@ const Home = () => {
       toast.error("Something Went wrong!!");
     }
   };
-  const getUserData = async () => {
+  // console.log(auth.user._id);
+  const handleLikeMusic = async (mid) => {
     try {
-      const data = await axios.get(
-        `https://music-api-2rhl.onrender.com/api/v1/auth/user/ateeshkumar`
-      );
-      if (data.data.success) {
-        setUser(data.data.user);
-        localStorage.setItem(auth, JSON.stringify(data.data.user));
-      } else {
-        console.log("error");
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  const likeMusic = async (mid) => {
-    try {
-      if (auth.user.likes.find((e) => e === mid)) {
+      console.log("like music");
+      if (auth?.user?.likesmusic.find((e) => e === mid)) {
         const unlike = await axios.put(
           `https://music-api-2rhl.onrender.com/api/v1/product/music-unlike/${auth.user._id}/${mid}`
         );
-        console.log("like music");
+
         if (unlike.data.success) {
           toast.success(unlike.data.message);
           console.log(unlike.data.message);
@@ -69,7 +56,6 @@ const Home = () => {
   };
   useEffect(() => {
     getMusic();
-    getUserData();
   }, []);
 
   return (
@@ -96,7 +82,7 @@ const Home = () => {
                       className="home-social-figure-lisr"
                       onClick={() =>
                         auth
-                          ? likeMusic(item._id)
+                          ? handleLikeMusic(item._id)
                           : navigate("/authentication/user")
                       }
                     >
