@@ -4,6 +4,9 @@ import "./css/profile.css";
 import { useAuth } from "../context/auth";
 import { useParams } from "react-router-dom";
 import { CircleLoader } from "../components/Loader";
+import { IoMdSettings } from "react-icons/io";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 import axios from "axios";
 const Profile = () => {
   const pr = useParams();
@@ -50,6 +53,47 @@ const Profile = () => {
             <div className="profile-uper-data-container">
               <div className="profile-uper-data-container-uper">
                 <h2>@{auth?.user?.userId}</h2>
+                <button className="profile-edit-btn">Edit Profile</button>
+                <Popup
+                  trigger={
+                    <button className="profile-btn-setting">
+                      <IoMdSettings />
+                    </button>
+                  }
+                  modal
+                  nested
+                  className="profile-popup"
+                >
+                  {(close) => (
+                    <div className="model">
+                      <ul className="profile-popup-window">
+                        <li className="profile-popup-window-list">
+                          <button className="profile-popup-window-list-btn">
+                            Qr Code
+                          </button>
+                        </li>
+                        <li className="profile-popup-window-list">
+                          <button className="profile-popup-window-list-btn">
+                            Setting and Privacy
+                          </button>
+                        </li>
+                        <li className="profile-popup-window-list">
+                          <button className="profile-popup-window-list-btn">
+                            Logout
+                          </button>
+                        </li>
+                        <li className="profile-popup-window-list">
+                          <button
+                            onClick={() => close()}
+                            className="profile-popup-window-list-btn"
+                          >
+                            Close modal
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </Popup>
               </div>
               <div className="profile-uper-data-container-lower">
                 <div className="p-playlist-data">

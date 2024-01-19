@@ -19,3 +19,54 @@
 .p-playlist-data>p{
     margin-right: 20px;
 }
+.profile-edit-btn{
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+.profile-edit-btn:hover{
+    background: #d3d3d3;
+
+}
+.profile-btn-setting{
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+}
+.profile-uper-data-container-uper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.profile-popup{
+    width: 20%;
+}
+.profile-popup-window{
+    list-style: none;
+
+}
+.profile-popup-window-list{
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+    text-align: center;
+    
+}
+.profile-popup-window-list-btn{
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+}

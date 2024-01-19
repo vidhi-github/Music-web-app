@@ -18,7 +18,10 @@
 .up-layout-content{
     overflow-y: scroll;
     height: 85vh;
-    padding-left: 10%;
+    width: 60%;
+}
+.right-layout-content{
+    width: 40%;
 }
 .up-layout-content::-webkit-scrollbar{
     display: none;

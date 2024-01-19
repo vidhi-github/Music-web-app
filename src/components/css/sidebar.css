@@ -25,8 +25,8 @@
     align-items: center;
     font-size: 25px;
     color: #000000;
-    padding-left: 8px;
-    margin:0 4px;
+    padding: 8px;
+    margin:18px 4px;
 }
 .side-nav-link:active{
     color: red;

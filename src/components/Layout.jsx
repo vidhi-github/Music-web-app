@@ -7,10 +7,10 @@ const Layout = ({ children }) => {
     try {
       const permission = await Notification.requestPermission();
       return;
-      // console.log("Notification Permission:", permission);
+      console.log("Notification Permission:", permission);
     } catch (error) {
       return;
-      // console.error("Error requesting notification permission:", error);
+      console.error("Error requesting notification permission:", error);
     }
   };
   const handleLocationPermission = () => {
@@ -18,12 +18,12 @@ const Layout = ({ children }) => {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           return;
-          // console.log("Latitude:", position.coords.latitude);
-          // console.log("Longitude:", position.coords.longitude);
+          console.log("Latitude:", position.coords.latitude);
+          console.log("Longitude:", position.coords.longitude);
         },
         (error) => {
           return;
-          // console.error("Error getting location:", error.message);
+          console.error("Error getting location:", error.message);
         }
       );
     } else {
